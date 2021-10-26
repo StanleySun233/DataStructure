@@ -22,6 +22,7 @@ using namespace std;
 #define FINDNUM 1
 #define WRONGMODEL 3
 #define VISIT 0
+#define EQUAL FINDNUM
 typedef int Status;
 
 typedef struct {

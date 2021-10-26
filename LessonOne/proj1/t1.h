@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 typedef struct Complex
 {
     float real;

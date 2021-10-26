@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Data/ClionProject/DataStructure/LessonOne/proj1/main.cpp" "D:/Data/ClionProject/DataStructure/LessonOne/proj1/cmake-build-debug/CMakeFiles/proj1.dir/main.cpp.obj"
   "D:/Data/ClionProject/DataStructure/LessonOne/proj1/t1.cpp" "D:/Data/ClionProject/DataStructure/LessonOne/proj1/cmake-build-debug/CMakeFiles/proj1.dir/t1.cpp.obj"
   "D:/Data/ClionProject/DataStructure/LessonOne/proj1/t1_main.cpp" "D:/Data/ClionProject/DataStructure/LessonOne/proj1/cmake-build-debug/CMakeFiles/proj1.dir/t1_main.cpp.obj"
   )

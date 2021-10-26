@@ -1,7 +1,5 @@
 #include "DefineList.h"
 
-#define EQUAL FINDNUM
-
 int main()
 {
     SqList L;

@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include "t1.h"
 void CreatComplex(Complex &c,float a,float b)
 {

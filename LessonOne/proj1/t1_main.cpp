@@ -1,6 +1,6 @@
 #include "t1.h"
-#include<stdio.h>
-void main()
+
+int main()
 {
     float a,b,c,d;
     int i,j;
@@ -36,8 +36,9 @@ void main()
                 Print(mul);
                 break;
             case 4:
-                return;
+                return 0;
         }
     }
+    return 0;
 }
 
