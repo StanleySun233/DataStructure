@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Data/ClionProject/DataStructure/LessonThree/proj/ADT.cpp
+df.h
+D:/Data/ClionProject/DataStructure/LessonThree/proj/df.h
+
+D:/Data/ClionProject/DataStructure/LessonThree/proj/df.h
+iostream
+D:/Data/ClionProject/DataStructure/LessonThree/proj/iostream
+cstdio
+-
+cstring
+-
+cstdlib
+-
+
