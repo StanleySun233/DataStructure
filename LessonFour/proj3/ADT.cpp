@@ -6,9 +6,9 @@ Status InitStack(SqStack &s)
     return OK;
 }
 
-Status DestroyStack(SqStack *s)
+Status DestroyStack(SqStack &s)
 {
-    free(s);
+    free(&s);
     return OK;
 }
 

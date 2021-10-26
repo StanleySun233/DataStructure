@@ -8,28 +8,29 @@ bool isParenCompare(SqStack &s)
     {
         Elemtype e1;
         PushStack(s,e1);
-        if (e1 == ')' or e1 == ']' or e1 == '}')
+        if ( e1 == ')' or e1 == ']' or e1 == '}' )
             PutStack(s0,e1);
-        elif (StackLength(s0) == 0)
+        elif ( StackLength(s0) == 0 )
             return false;
         else
         {
             Elemtype e2;
             PushStack(s0,e2);
             PushStack(s0,e1);
-            if (e1+e2 == 81 or e1 + e2 == 248 or e1+ e2 == 184)
+            if ( e1 + e2 == 81 or e1 + e2 == 248 or e1 + e2 == 184 )
             {
                 continue;
             }
             else
             {
                 cout<<e1<<e2<<endl;
-                if ((e1 =='(' and e2 !=')') or (e1 == '{' and e2 != '}') or (e1 == '[' and e2 != ']') or (e1 == ')' or e1 == ']' or e1 == '}'))
+                if ( ( e1 == '(' and e2 != ')' ) or ( e1 == '{' and e2 != '}' ) or ( e1 == '[' and e2 != ']' ) or ( e1 == ')' or e1 == ']' or e1 == '}' ) )
                 {
                     PutStack(s0, e1);
                     PutStack(s0, e2);
                 }
-                else {
+                else
+                {
                     cout<<e1<<e2<<endl;
                     return false;
                 }

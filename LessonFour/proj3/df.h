@@ -1,6 +1,5 @@
 #include<iostream>
 #include "string"
-#include "string.h"
 
 #define OK 1
 #define ERROR 0
