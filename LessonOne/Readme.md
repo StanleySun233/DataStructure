@@ -11,18 +11,24 @@
 ### 4.运算结果以相应的复数或实数的表示形式显示。
 ## 四、实现提示
 ### 1.C语言中可以使用结构体来表示一种抽象数据类型，比如复数就可以采用下面这种结构来表示：
-  typedef struct
-  { 
-    float  real ; 
-    float  imag;
-  }Complex;
+```
+typedef struct
+{ 
+  float  real ; 
+  float  imag;
+}Complex;
+```
 ### 2.复数的基本运算可以由若干个全局函数来实现，比如：
-  void AddComplex(Complex &sum,Complex c1,Complex c2); 表示两个复数相加
-  void SubComplex(Complex &sub,Complex c1,Complex c2); 表示两个复数相减
-  void MulComplex(Complex &mul,Complex c1,Complex c2); 表示两个复数相乘
+```
+void AddComplex(Complex &sum,Complex c1,Complex c2); 表示两个复数相加
+void SubComplex(Complex &sub,Complex c1,Complex c2); 表示两个复数相减
+void MulComplex(Complex &mul,Complex c1,Complex c2); 表示两个复数相乘
+```
 ## 五、 测试数据 
-  1. 0，0；0，0
-  2. 3.1，0；4.22，8.9
-  3. -1.33，2.34；0.1，-6.5
-  4. 0，9.7；-2.1，-9.7
-  5. 7.7，-8；-7.7，0
+```
+1. 0，0；0，0
+2. 3.1，0；4.22，8.9
+3. -1.33，2.34；0.1，-6.5
+4. 0，9.7；-2.1，-9.7
+5. 7.7，-8；-7.7，0
+```
