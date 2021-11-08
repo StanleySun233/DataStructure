@@ -1,3 +1,0 @@
-D:/Data/ClionProject/DataStructure/LessonFive/cmake-build-debug/CMakeFiles/LessonFive.dir
-D:/Data/ClionProject/DataStructure/LessonFive/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Data/ClionProject/DataStructure/LessonFive/cmake-build-debug/CMakeFiles/rebuild_cache.dir
