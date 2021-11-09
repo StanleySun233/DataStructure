@@ -14,7 +14,6 @@ struct tnode
 void  PreCreateTree(leaf &k)
 {
     char data1;
-    cout<<"PreCreate"<<endl;
     cin >> data1;
     if (data1 =='#')
         k = NULL;
@@ -54,29 +53,33 @@ void BackTraverse(leaf root)
         cout << root->data << " ";
     }
 }
-/*
-void MidTraverse2(leaf root)
+
+void MidTraverse2(leaf &root)
 {
-    stack<char> S;
-    leaf p= root;
-    while( p || !S.empty()){
+    stack<leaf> s;
+    leaf p = root;
+    while(p || !s.empty())
+    {
         if(p)
         {
-            S.push(p->data);
-            p=p->left;
+            s.push(p);
+            p = p->left;
         }
-        else{
-            cout<<S.top();
-            S.pop();
-            p=p->right;
+        else
+        {
+            p = s.top();
+            s.pop();
+            cout<<p->data<<" ";
+            p = p->right;
         }
     }
 }
-*/
+
 
 int main()
 {
     leaf st = NULL;
+    cout<<"PreCreate"<<endl;
     PreCreateTree(st);
     cout << "PreTraverse"<< endl;
     PreTraverse(st);
@@ -86,9 +89,9 @@ int main()
     MidTraverse1(st);
     cout << endl;
 
-//    cout << "MidTraverse2"<< endl;
-//    MidTraverse2(st);
-//    cout << endl;
+    cout << "MidTraverse2"<< endl;
+    MidTraverse2(st);
+    cout << endl;
 
     cout << "BackTraverse"<< endl;
     BackTraverse(st);
