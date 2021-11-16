@@ -40,5 +40,5 @@ ABCDE
 4 2
 ```
 ### 2.图片
-![测试数据1](/pic/pic1.png)
-![测试数据2](/pic/pic2.png)
+![figure1](/pic/pic1.png)
+![figure2](/pic/pic2.png)
