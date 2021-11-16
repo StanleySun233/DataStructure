@@ -40,5 +40,5 @@ ABCDE
 4 2
 ```
 ### 2.图片
-![figure1](/main/LessonSix/pic/pic1.png)
-![figure2](/main/LessonSix/pic/pic2.png)
+![figure1](/LessonSix/pic/pic1.png)
+![figure2](/LessonSix/pic/pic2.png)
