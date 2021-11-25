@@ -12,6 +12,6 @@ int main()
     NextAdjVex(G,3,3);
 
     MGraphDFS(G);
-    MGraphBFS(G);
+    MGraphBFS(G); //BFS has some problems which should be fixed.
     return 0;
 }
