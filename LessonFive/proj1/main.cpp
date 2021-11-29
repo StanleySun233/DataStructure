@@ -24,6 +24,7 @@ void  PreCreateTree(leaf &k)
         PreCreateTree(k->right);
     }
 }
+
 void PreTraverse(leaf root)
 {
     if (root)
