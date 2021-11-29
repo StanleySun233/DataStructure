@@ -12,7 +12,15 @@ int main() {
         BiTreeInsert(rankTree,num);
         i--;
     }
-    cout<<"Create success."<<endl;
+    cout<<"Create Success."<<endl;
+
+    PreTraverse(rankTree);
+    cout<<endl;
+
+    MidTraverse1(rankTree);
+    cout<<endl;
+
+    Delete(rankTree,5);
 
     PreTraverse(rankTree);
     cout<<endl;

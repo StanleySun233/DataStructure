@@ -18,5 +18,7 @@ void PreTraverse(leaf root);
 void MidTraverse1(leaf root);
 leaf SearchLeafCompare(leaf root, int key);
 void BiTreeInsert(leaf &root, int key);
+leaf FindMin(leaf root);
+leaf Delete(leaf &root, int data);
 
 #endif //LESSONSEVEN_BITREESEARCH_H
