@@ -118,6 +118,30 @@ LessonSeven\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LessonSeven.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LessonSeven.dir\build
 .PHONY : LessonSeven\fast
 
+BITreeSearch.obj: BITreeSearch.cpp.obj
+.PHONY : BITreeSearch.obj
+
+# target to build an object file
+BITreeSearch.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LessonSeven.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LessonSeven.dir\BITreeSearch.cpp.obj
+.PHONY : BITreeSearch.cpp.obj
+
+BITreeSearch.i: BITreeSearch.cpp.i
+.PHONY : BITreeSearch.i
+
+# target to preprocess a source file
+BITreeSearch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LessonSeven.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LessonSeven.dir\BITreeSearch.cpp.i
+.PHONY : BITreeSearch.cpp.i
+
+BITreeSearch.s: BITreeSearch.cpp.s
+.PHONY : BITreeSearch.s
+
+# target to generate assembly for a file
+BITreeSearch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LessonSeven.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LessonSeven.dir\BITreeSearch.cpp.s
+.PHONY : BITreeSearch.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -151,6 +175,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... LessonSeven
+	@echo ... BITreeSearch.obj
+	@echo ... BITreeSearch.i
+	@echo ... BITreeSearch.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

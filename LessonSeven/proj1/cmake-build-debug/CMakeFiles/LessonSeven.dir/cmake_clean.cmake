@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LessonSeven.dir/BITreeSearch.cpp.obj"
   "CMakeFiles/LessonSeven.dir/main.cpp.obj"
   "LessonSeven.exe"
   "LessonSeven.exe.manifest"

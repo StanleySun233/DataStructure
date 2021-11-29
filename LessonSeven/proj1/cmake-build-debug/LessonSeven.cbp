@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Data/ClionProject/DataStructure/LessonSeven/proj1/BITreeSearch.cpp">
+			<Option target="LessonSeven"/>
+		</Unit>
+		<Unit filename="D:/Data/ClionProject/DataStructure/LessonSeven/proj1/BITreeSearch.h">
+			<Option target="LessonSeven"/>
+		</Unit>
 		<Unit filename="D:/Data/ClionProject/DataStructure/LessonSeven/proj1/BiTreeSearch.h">
 			<Option target="LessonSeven"/>
 		</Unit>

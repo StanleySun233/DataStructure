@@ -3,4 +3,4 @@ project(LessonSeven)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(LessonSeven main.cpp BiTreeSearch.h)
+add_executable(LessonSeven main.cpp BiTreeSearch.h BITreeSearch.cpp)

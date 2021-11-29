@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Data/ClionProject/DataStructure/LessonSeven/proj1/BITreeSearch.cpp" "D:/Data/ClionProject/DataStructure/LessonSeven/proj1/cmake-build-debug/CMakeFiles/LessonSeven.dir/BITreeSearch.cpp.obj"
   "D:/Data/ClionProject/DataStructure/LessonSeven/proj1/main.cpp" "D:/Data/ClionProject/DataStructure/LessonSeven/proj1/cmake-build-debug/CMakeFiles/LessonSeven.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")

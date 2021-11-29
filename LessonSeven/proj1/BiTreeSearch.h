@@ -4,14 +4,19 @@
 #include "iostream"
 using namespace std;
 
-typedef struct tnode TN;
-typedef struct tnode* leaf;
+typedef struct TNode TN;
+typedef struct TNode* leaf;
 
-struct tnode
+struct TNode
 {
-    char data;
+    int data;
     leaf left,right;
 };
 
+void PreCreateTree(leaf &k);
+void PreTraverse(leaf root);
+void MidTraverse1(leaf root);
+leaf SearchLeafCompare(leaf root, int key);
+void BiTreeInsert(leaf &root, int key);
 
 #endif //LESSONSEVEN_BITREESEARCH_H
