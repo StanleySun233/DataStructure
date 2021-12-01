@@ -88,26 +88,33 @@ leaf FindMin(leaf root)
 
 leaf Delete(leaf &root, int data)
 {
-    if(root == nullptr) return root;
-    else if(data < root->data) root->left = Delete(root->left,data);
-    else if (data > root->data) root->right = Delete(root->right,data);
-    else {
-        if(root->left == nullptr && root->right == nullptr) {
+    if(root == nullptr)
+        return root;
+    else if(data < root->data)
+        root->left = Delete(root->left,data);
+    else if (data > root->data)
+        root->right = Delete(root->right,data);
+    else
+    {
+        if(root->left == nullptr && root->right == nullptr)
+        {
             delete root;
             root = nullptr;
         }
-        else if(root->left == nullptr) {
+        else if(root->left == nullptr)
+        {
             leaf temp = root;
             root = root->right;
             delete temp;
         }
-        else if(root->right == nullptr) {
+        else if(root->right == nullptr)
+        {
             leaf temp = root;
             root = root->left;
             delete temp;
         }
-            // case 3: 2 children
-        else {
+        else
+        {
             leaf temp = FindMin(root->right);
             root->data = temp->data;
             root->right = Delete(root->right,temp->data);
