@@ -106,7 +106,6 @@ leaf Delete(leaf &root, int data)
             root = root->left;
             delete temp;
         }
-            // case 3: 2 children
         else {
             leaf temp = FindMin(root->right);
             root->data = temp->data;
