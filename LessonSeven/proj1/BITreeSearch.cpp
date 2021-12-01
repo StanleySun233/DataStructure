@@ -25,13 +25,13 @@ void PreTraverse(leaf root)
     }
 }
 
-void MidTraverse1(leaf root)
+void MidTraverse(leaf root)
 {
     if (root)
     {
-        MidTraverse1(root->left);
+        MidTraverse(root->left);
         cout<<root->data<<" ";
-        MidTraverse1(root->right);
+        MidTraverse(root->right);
     }
 }
 
@@ -59,66 +59,64 @@ void BiTreeInsert(leaf &root, int key)
         root->right=p2;
         return;
     }
+
     if(root->data > key)
-    {
         BiTreeInsert(root->left, key);
-    }
-    else {
-        BiTreeInsert(root->right, key);
-    }
-}
-
-void Traverse(leaf &root,leaf &r)
-{
-    if (r)
-    {
-        BiTreeInsert(root,r->data);
-        Traverse(root,r->left);
-        Traverse(root,r->right);
-    }
-}
-
-
-leaf FindMin(leaf root)
-{
-    while(root->left != nullptr) root = root->left;
-    return root;
-}
-
-
-leaf Delete(leaf &root, int data)
-{
-    if(root == nullptr)
-        return root;
-    else if(data < root->data)
-        root->left = Delete(root->left,data);
-    else if (data > root->data)
-        root->right = Delete(root->right,data);
     else
+        BiTreeInsert(root->right, key);
+}
+
+int a[100];
+int n = 0;
+
+int Delete(leaf &root, int data)
+{
+    auto *p1 = SearchLeafCompare(root,data);
+    int res = p1->data;
+    leaf rt = nullptr;
+    n = 0;
+
+    DelTraverse(root, res);
+
+    for(int i = 0;i<n;i++)
+        BiTreeInsert(rt,a[i]);
+    root = rt;
+    return res;
+}
+
+void DelTraverse(leaf root, int key)
+{
+    if (root)
     {
-        if(root->left == nullptr && root->right == nullptr)
+        if(key != root->data)
         {
-            delete root;
-            root = nullptr;
+            a[n] = root->data;
+            n++;
         }
-        else if(root->left == nullptr)
-        {
-            leaf temp = root;
-            root = root->right;
-            delete temp;
-        }
-        else if(root->right == nullptr)
-        {
-            leaf temp = root;
-            root = root->left;
-            delete temp;
-        }
-        else
-        {
-            leaf temp = FindMin(root->right);
-            root->data = temp->data;
-            root->right = Delete(root->right,temp->data);
-        }
+        DelTraverse(root->left, key);
+        DelTraverse(root->right, key);
     }
-    return root;
+}
+
+float res = 0;
+float l = 1;
+void s(leaf root,float deep)
+{
+    auto p = root;
+    if (root)
+    {
+        res +=deep;
+        l = max(l,deep+1);
+        s(root->left,deep+1);
+        s(root->right,deep+1);
+    }
+}
+
+float average(leaf root)
+{
+    res = 0;
+    l = 1;
+    s(root,1);
+    cout<<"res"<<res<<"l"<<l<<endl;
+    return (res / l);
 }

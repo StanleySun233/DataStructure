@@ -15,10 +15,11 @@ struct TNode
 
 void PreCreateTree(leaf &k);
 void PreTraverse(leaf root);
-void MidTraverse1(leaf root);
+void MidTraverse(leaf root);
 leaf SearchLeafCompare(leaf root, int key);
 void BiTreeInsert(leaf &root, int key);
-leaf FindMin(leaf root);
-leaf Delete(leaf &root, int data);
-
+int Delete(leaf &root, int data);
+void DelTraverse(leaf root, int key);
+void s(leaf root,float deep);
+float average(leaf root);
 #endif //LESSONSEVEN_BITREESEARCH_H
