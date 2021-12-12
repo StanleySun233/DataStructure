@@ -1,6 +1,4 @@
-#include <iostream>
 #include "student.h"
-
 
 int main()
 {
@@ -8,23 +6,24 @@ int main()
     int key;
     while(true)
     {
-        printf("    ----------------------\n");
-        printf("    1.录入学生基本信息。\n");
-        printf("    2.直接插入排序。\n");
-        printf("    3.冒泡排序。\n");
-        printf("    4.快速排序。\n");
-        printf("    5.简单选择排序。\n");
-        printf("    6.堆排序。\n");
-        printf("    7.2-路归并排序。\n");
-        printf("    8.输出学生信息。\n");
-        printf("    9.退出。\n");
-        printf("    ----------------------\n");
+        cout<<"----------------------"<<endl;
+        cout<<"1.Enter stuedent information."<<endl;
+        cout<<"2.Insert sort"<<endl;
+        cout<<"3.Bubble sort"<<endl;
+        cout<<"4.Quick sort."<<endl;
+        cout<<"5.Selection sorting."<<endl;
+        cout<<"6.Heap sort."<<endl;
+        cout<<"7.Merge sort."<<endl;
+        cout<<"8.Output student information"<<endl;
+        cout<<"9.Exit"<<endl;
+        cout<<"----------------------"<<endl;
         scanf_s("%d",&key);
 
         switch(key)
         {
             case 1:
-                Build(stu);
+                cout<<"Input how many student to create"<<endl;
+
                 break;
             case 2:
                 InsertSort(stu);
@@ -33,23 +32,20 @@ int main()
                 BubbleSort(stu);
                 break;
             case 4:
-                ReadFile(stu);
                 QuickSort(stu,1,n);
                 Display(stu);
                 break;
             case 5:
-                SeletionSort(stu);
+                SelectionSort(stu);
                 break;
             case 6:
                 HeapSort(stu);
                 break;
             case 7:
-                ReadFile(stu);
                 MergeSort(stu,1,n);
                 Display(stu);
                 break;
             case 8:
-                ReadFile(stu);
                 Display(stu);
                 break;
             default:

@@ -23,7 +23,7 @@ void InsertSort(Stu stu);
 void BubbleSort(Stu stu);
 int Partition(Stu stu,int low,int high);
 void QuickSort(Stu stu,int low,int high);
-void SeletionSort(Stu stu);
+void SelectionSort(Stu stu);
 void HeapAdjust(Stu stu,int s,int m);
 void HeapSort(Stu stu);
 void Merge(Stu stu,int low,int mid,int high);

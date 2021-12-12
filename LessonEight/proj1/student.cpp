@@ -3,36 +3,8 @@
 //
 
 #include "student.h"
-void Build(Stu stu)
-{
-    FILE *fp;
-    char name[20];
-    int score,i;
-    char num[20];
-    fp=fopen("E:\\Student.txt","w");
-    printf("请输入学生人数:");
-    scanf("%d",&n);
 
-    printf("请输入学生信息(学号，姓名，成绩)：\n");
-    for(i=1;i<=n;i++)
-    {
-        scanf("%s %s %d",num,name,&score);
-        fprintf(fp,"%s %s %d\n",num,name,score);
-    }
-    printf("登录成功.\n");
-    fclose(fp);
-}
-void ReadFile(Stu &stu)
-{
-    FILE *fp;
-    int i;
-    stu=(Stu)malloc(sizeof(StuNode)*(n+1));
-    fp=fopen("E:\\Student.txt","r");
-    for(i=1;i<=n;i++)
-        fscanf(fp,"%s %s %d",stu[i].num,stu[i].name,&stu[i].score);
-
-    fclose(fp);
-}
+void setStudent(Stu)
 
 void Display(Stu stu)
 {
@@ -49,7 +21,6 @@ void Display(Stu stu)
             index=0;
         }
     }
-
     free(stu);
 }
 
@@ -69,7 +40,6 @@ void InsertSort(Stu stu)
     char num[20];
     StuNode temp;
     stu=(Stu)malloc(sizeof(StuNode)*(n+1));
-    ReadFile(stu);
 
     for(i=n;i>=1;i--)
     {
@@ -136,11 +106,9 @@ void QuickSort(Stu stu,int low,int high)
     }
 }
 
-void SeletionSort(Stu stu)
+void SelectionSort(Stu stu)
 {
     int i,j,temp;
-    stu=(Stu)malloc(sizeof(StuNode)*(n+1));
-    ReadFile(stu);
     for(i=1;i<=n-1;i++)
     {
         int key=stu[i].score;
@@ -167,7 +135,7 @@ void HeapAdjust(Stu stu,int s,int m)
     {
         if(j<m && stu[j].score>stu[j+1].score)
             j++;
-        if(!(rc.score>stu[j].score))
+        if(rc.score <= stu[j].score)
             break;
         stu[s]=stu[j];
         s=j;
