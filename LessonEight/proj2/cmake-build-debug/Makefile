@@ -118,6 +118,30 @@ proj2\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\proj2.dir\build
 .PHONY : proj2\fast
 
+Student.obj: Student.cpp.obj
+.PHONY : Student.obj
+
+# target to build an object file
+Student.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\proj2.dir\Student.cpp.obj
+.PHONY : Student.cpp.obj
+
+Student.i: Student.cpp.i
+.PHONY : Student.i
+
+# target to preprocess a source file
+Student.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\proj2.dir\Student.cpp.i
+.PHONY : Student.cpp.i
+
+Student.s: Student.cpp.s
+.PHONY : Student.s
+
+# target to generate assembly for a file
+Student.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\proj2.dir\Student.cpp.s
+.PHONY : Student.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -151,6 +175,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... proj2
+	@echo ... Student.obj
+	@echo ... Student.i
+	@echo ... Student.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
