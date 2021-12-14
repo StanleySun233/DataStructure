@@ -3,4 +3,4 @@ project(proj1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(proj1 main.cpp ADT.cpp df.h)
+add_executable(proj1 main.cpp graph.cpp graph.h)

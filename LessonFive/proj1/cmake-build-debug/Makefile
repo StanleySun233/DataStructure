@@ -118,6 +118,30 @@ proj1\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\proj1.dir\build
 .PHONY : proj1\fast
 
+BiTree.obj: BiTree.cpp.obj
+.PHONY : BiTree.obj
+
+# target to build an object file
+BiTree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\proj1.dir\BiTree.cpp.obj
+.PHONY : BiTree.cpp.obj
+
+BiTree.i: BiTree.cpp.i
+.PHONY : BiTree.i
+
+# target to preprocess a source file
+BiTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\proj1.dir\BiTree.cpp.i
+.PHONY : BiTree.cpp.i
+
+BiTree.s: BiTree.cpp.s
+.PHONY : BiTree.s
+
+# target to generate assembly for a file
+BiTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proj1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\proj1.dir\BiTree.cpp.s
+.PHONY : BiTree.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -151,6 +175,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... proj1
+	@echo ... BiTree.obj
+	@echo ... BiTree.i
+	@echo ... BiTree.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

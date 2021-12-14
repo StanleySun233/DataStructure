@@ -3,4 +3,4 @@ project(proj1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(proj1 main.cpp)
+add_executable(proj1 main.cpp BiTree.cpp BiTree.h)
