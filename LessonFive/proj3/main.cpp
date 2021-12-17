@@ -63,9 +63,6 @@ BiTree Root(leaf root)
 
 
 BiTree  Value(BiTree T,  leaf e);
-{
-    return e-?
-}
 //初始条件：二叉树T已存在，e是T的某个节点
 //操作结果：返回e的值
 
