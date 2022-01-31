@@ -13,7 +13,7 @@
 ## 4. [顺序栈](/Lesson4/)
 ## 5. [二叉树](/Lesson5/)
 ## 6. [图](/Lesson6/)
-## 7. [二叉搜索树](/Lesson7/)
+## 7. [查找](/Lesson7/)
 ## 8. [排序](/Lesson8/)
 
 # Analysis & Rules
